@@ -43,7 +43,7 @@ jobs:
           path: |
             release/**/*.AppImage
   build-windows:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
       - run: git clone https://gitlab.lapstime.fr/LapsTime/f1mv-integration-store.git ./
@@ -65,7 +65,7 @@ jobs:
         run: pnpm install --no-frozen-lockfile
 
       - name: Build/release Electron app win32/x64
-        run: pnpm build
+        run: pnpm build -w --x64
         env:
           GH_TOKEN: ${{ secrets.TOKEN_GH_RELEASE }}
 
