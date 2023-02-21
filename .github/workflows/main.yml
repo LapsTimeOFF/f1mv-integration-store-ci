@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - run: git clone https://gitlab.lapstime.fr/LapsTime/f1mv-integration-store.git
+      - run: git clone https://gitlab.lapstime.fr/LapsTime/f1mv-integration-store.git ./
 
       - name: Install Node.js, NPM and Yarn
         uses: actions/setup-node@v1
@@ -46,7 +46,7 @@ jobs:
     runs-on: windows-latest
 
     steps:
-      - run: git clone https://gitlab.lapstime.fr/LapsTime/f1mv-integration-store.git
+      - run: git clone https://gitlab.lapstime.fr/LapsTime/f1mv-integration-store.git ./
 
       - name: Install Node.js, NPM and Yarn
         uses: actions/setup-node@v1
@@ -79,7 +79,7 @@ jobs:
     runs-on: macos-12
 
     steps:
-      - run: git clone https://gitlab.lapstime.fr/LapsTime/f1mv-integration-store.git
+      - run: git clone https://gitlab.lapstime.fr/LapsTime/f1mv-integration-store.git ./
 
       - name: Install Node.js, NPM and Yarn
         uses: actions/setup-node@v1
